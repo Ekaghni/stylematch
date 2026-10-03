@@ -1,8 +1,8 @@
 # stylematch
 
 [![tests](https://github.com/Ekaghni/stylematch/actions/workflows/ci.yml/badge.svg)](https://github.com/Ekaghni/stylematch/actions)
-[![PyPI](https://img.shields.io/pypi/v/stylematch)](https://pypi.org/project/stylematch/)
-[![Python](https://img.shields.io/pypi/pyversions/stylematch)](https://pypi.org/project/stylematch/)
+[![PyPI](https://img.shields.io/pypi/v/stylematch?label=pypi&cacheSeconds=3600)](https://pypi.org/project/stylematch/)
+[![Python](https://img.shields.io/pypi/pyversions/stylematch?label=python&cacheSeconds=3600)](https://pypi.org/project/stylematch/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **Find out whether a text looks AI-written.** stylematch runs a neural classifier on your text, on your GPU if you have one or on the CPU if you don't, and gives you a score plus a plain-English reading. It works from the terminal, from Python, or from a small desktop window.
