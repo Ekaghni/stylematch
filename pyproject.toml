@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stylematch"
+version = "0.1.0"
+description = "Compare the writing style of two texts, and check whether a text looks AI-written. GPU optional."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Ekaghni Mukherjee", email = "ekaghni.mukherjee@gmail.com" }]
+keywords = ["stylometry", "writing-style", "authorship", "tf-idf", "text-similarity", "nlp", "ai-detection", "ai-text-detector"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+ai = ["torch>=2.0", "transformers>=4.40", "sentencepiece", "protobuf"]
+dev = ["pytest", "scikit-learn", "build", "twine"]
+
+[project.scripts]
+stylematch = "stylematch.cli:main"
+
+[project.gui-scripts]
+stylematch-gui = "stylematch.gui:launch"
+
+[project.urls]
+Homepage = "https://github.com/Ekaghni/stylematch"
+Issues = "https://github.com/Ekaghni/stylematch/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: downloads and runs a neural model"]

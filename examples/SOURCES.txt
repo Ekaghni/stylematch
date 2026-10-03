@@ -1,0 +1,3 @@
+human_twain.txt: opening of The Adventures of Huckleberry Finn by Mark Twain (1884). Public domain, from Project Gutenberg.
+ai_style.txt: typical machine-written essay, included to show a detection example.
+casual_a.txt, casual_b.txt, formal.txt: short samples for the style comparison demo.
