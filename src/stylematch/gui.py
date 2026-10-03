@@ -29,10 +29,10 @@ def launch() -> int:
         return 1
 
     root.title("stylematch")
-    root.geometry("900x620")
+    root.geometry("900x660")
     root.configure(bg="#f0f0f0")
 
-    tk.Label(root, text="Writing Style Comparison", font=("Arial", 20, "bold"),
+    tk.Label(root, text="stylematch: AI text check and style comparison", font=("Arial", 18, "bold"),
              bg="#f0f0f0").pack(pady=10)
 
     frame = tk.Frame(root, bg="#f0f0f0")
@@ -113,10 +113,10 @@ def launch() -> int:
 
     buttons = tk.Frame(root, bg="#f0f0f0")
     buttons.pack(pady=10)
-    tk.Button(buttons, text="Compare", command=run_compare, font=("Arial", 12, "bold"),
-              bg="#2e7d32", fg="white", width=15).grid(row=0, column=0, padx=10)
     tk.Button(buttons, text="Detect AI", command=run_detect, font=("Arial", 12, "bold"),
-              bg="#1565c0", fg="white", width=15).grid(row=0, column=1, padx=10)
+              bg="#1565c0", fg="white", width=15).grid(row=0, column=0, padx=10)
+    tk.Button(buttons, text="Compare style", command=run_compare, font=("Arial", 12, "bold"),
+              bg="#2e7d32", fg="white", width=15).grid(row=0, column=1, padx=10)
     tk.Button(buttons, text="Clear", command=clear, font=("Arial", 12, "bold"),
               bg="#c62828", fg="white", width=15).grid(row=0, column=2, padx=10)
     result_label.pack(pady=10, padx=20, fill=tk.X)

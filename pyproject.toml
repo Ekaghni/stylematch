@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stylematch"
-version = "0.1.1"
-description = "Compare the writing style of two texts, and check whether a text looks AI-written. GPU optional."
+version = "0.1.2"
+description = "AI text detector (neural, GPU optional) with a writing-style comparison tool. CLI, Python API and desktop app."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [{ name = "Ekaghni Mukherjee", email = "ekaghni.mukherjee@gmail.com" }]
-keywords = ["stylometry", "writing-style", "authorship", "tf-idf", "text-similarity", "nlp", "ai-detection", "ai-text-detector"]
+keywords = ["ai-detection", "ai-text-detector", "chatgpt-detector", "llm", "deberta", "stylometry", "writing-style", "authorship", "nlp"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Education",
